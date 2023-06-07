@@ -23,11 +23,7 @@ class Store:
 
   def get_all_products(self):
     """Returns all products in the store that are active (list)"""
-    active_products = []
-    for product in self.products:
-      if product.is_active():
-        active_products.append(product)
-    return active_products
+    return self.products
 
   def order(self, shopping_list):
     """Gets a list of tuples where each tuple has 2 items:
